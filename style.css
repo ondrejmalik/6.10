@@ -1,0 +1,39 @@
+.grid-container{ 
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-item{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.flex-container {
+    display: flex;
+    background-color: #2196F3;
+  }
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    flex-wrap:nowrap;
+  }
+@media only screen and (max-width: 1000px) {
+.grid-container{ 
+    grid-template-columns: 100%;
+}
+.flex-container {
+    flex-wrap:wrap;
+  } 
+  }
+  @media only screen and (orientation: portrait) {
+    body {
+      background-color: red;
+    }
+  }
